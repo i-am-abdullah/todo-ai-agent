@@ -288,5 +288,5 @@ For issues and questions, please open an issue on GitHub.
 
 ---
 
-Built with ❤️ using FastAPI, LangChain, and Neon Postgres
+Built with ❤️ using FastAPI and LangChain
 
