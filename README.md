@@ -1,12 +1,12 @@
 # Todo AI Agent 🤖✅
 
-A production-grade Todo management system powered by AI, built with FastAPI, LangChain, and Neon Postgres.
+A production-grade Todo management system powered by AI, built with FastAPI, LangChain, and Postgres.
 
 ## Features
 
 - 🤖 **Natural Language Interface**: Talk to your todos using plain English
 - 🔄 **RESTful API**: Complete CRUD operations for traditional integrations
-- 🗄️ **Async Database**: High-performance async SQLAlchemy with Neon Postgres
+- 🗄️ **Async Database**: High-performance async SQLAlchemy with Postgres
 - 🧠 **Smart Matching**: Fuzzy search and intelligent todo matching
 - 🏗️ **Clean Architecture**: Repository → Service → Tool → Agent pattern
 - 📝 **OpenAPI Docs**: Auto-generated API documentation
@@ -37,7 +37,7 @@ A production-grade Todo management system powered by AI, built with FastAPI, Lan
 └──────┬──────┘
        │
 ┌──────▼──────┐
-│  Database   │ ← Neon Postgres
+│  Database   │ ← Postgres
 └─────────────┘
 ```
 
@@ -46,7 +46,7 @@ A production-grade Todo management system powered by AI, built with FastAPI, Lan
 ### 1. Prerequisites
 
 - Python 3.11+
-- Neon Postgres account (or any Postgres database)
+- Postgres DB
 - OpenRouter API key (or OpenAI API key)
 
 ### 2. Installation
@@ -70,7 +70,7 @@ cp env.example .env
 Edit `.env` with your credentials (all three required):
 
 ```bash
-DATABASE_URL=postgresql+asyncpg://user:password@your-host.neon.tech/neondb
+DATABASE_URL=postgresql+asyncpg://user:password@host/db
 OPENROUTER_API_KEY=sk-or-v1-your-key-here
 OPENROUTER_MODEL=openai/gpt-4o-mini
 ```
@@ -258,7 +258,7 @@ alembic downgrade -1
 ## Technology Stack
 
 - **Framework**: FastAPI
-- **Database**: Neon Postgres (async SQLAlchemy)
+- **Database**: Postgres (async SQLAlchemy)
 - **AI/LLM**: LangChain + OpenRouter
 - **Python**: 3.11+
 - **Package Manager**: Poetry
